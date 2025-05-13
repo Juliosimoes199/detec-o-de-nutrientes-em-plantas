@@ -33,7 +33,7 @@ st.markdown("---")
 # Carregue o modelo treinado (isso será feito apenas uma vez)
 @st.cache_resource
 def load_model():
-    return YOLO('/Users/PC/Documents/Estágio_Tecn_Socity/deficiencia de nutrientes em folhas de alface/Lettuce-NPK-Yolov11/runs/detect/train/weights/best.pt')
+    return YOLO('best.pt')
 
 model = load_model()
 
