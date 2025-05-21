@@ -14,7 +14,7 @@ st.set_page_config(
 # Barra lateral para configurações e informações
 with st.sidebar:
     st.title("⚙️ Configurações")
-    st.markdown("Aplicação para detecção de deficiências de nutrientes em cultivos usando YOLO.")
+    st.markdown("Aplicação para detecção de deficiências de nutrientes em cultivos usando Visão Computacional.")
     st.markdown("---")
     st.subheader("Sobre o Modelo")
     st.markdown("Modelo YOLOv11 treinado para identificar deficiências de nutrientes (NPK) em plantações.")
