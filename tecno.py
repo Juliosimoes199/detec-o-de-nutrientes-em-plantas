@@ -5,7 +5,7 @@ import io
 
 # Configurações da página
 st.set_page_config(
-    page_title="Detecção de Deficiência em Alface",
+    page_title="Detecção de Deficiência em Plantações",
     page_icon="🥬",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -14,20 +14,20 @@ st.set_page_config(
 # Barra lateral para configurações e informações
 with st.sidebar:
     st.title("⚙️ Configurações")
-    st.markdown("Aplicação para detecção de deficiências de nutrientes em folhas de alface usando YOLO.")
+    st.markdown("Aplicação para detecção de deficiências de nutrientes em cultivos usando YOLO.")
     st.markdown("---")
     st.subheader("Sobre o Modelo")
-    st.markdown("Modelo YOLOv11 treinado para identificar deficiências de nutrientes (NPK) em folhas de alface.")
+    st.markdown("Modelo YOLOv11 treinado para identificar deficiências de nutrientes (NPK) em plantações.")
     st.markdown("---")
     st.subheader("Instruções")
-    st.markdown("1. Faça o upload de uma imagem clara de uma folha de alface.")
+    st.markdown("1. Faça o upload de uma imagem clara de um cultivo.")
     st.markdown("2. Clique no botão 'Detectar Deficiências'.")
     st.markdown("3. Os resultados da detecção serão exibidos abaixo.")
     st.markdown("---")
-    st.info("Desenvolvido com Streamlit e Ultralytics YOLO.")
+    st.info("Desenvolvido pela Tecno Society.")
 
 # Conteúdo principal
-st.title("🥬 Detecção de Deficiência de Nutrientes em Folhas de Alface")
+st.title("🥬 Detecção de Deficiência de Nutrientes em Cultivos")
 st.markdown("---")
 
 # Carregue o modelo treinado (isso será feito apenas uma vez)
@@ -38,7 +38,7 @@ def load_model():
 model = load_model()
 
 # Widget para fazer o upload da imagem
-uploaded_file = st.file_uploader("Faça o upload de uma imagem de folha de alface...", type=["jpg", "jpeg", "png"])
+uploaded_file = st.file_uploader("Faça o upload de uma imagem de um cultivo...", type=["jpg", "jpeg", "png"])
 
 st.markdown("---")
 
