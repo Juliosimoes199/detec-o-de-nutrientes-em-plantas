@@ -16,7 +16,7 @@ with st.sidebar:
     st.title("⚙️ Configurações")
     st.markdown("Aplicação para detecção de deficiências de nutrientes em cultivos usando Visão Computacional.")
     st.markdown("---")
-    st.subheader("Nutrientes capaz de detectar")
+    st.subheader("Nutrientes capazes de detectar")
     st.markdown("Cálcio")
     st.markdown("Magnésio")
     st.markdown("Nitrogénio")
