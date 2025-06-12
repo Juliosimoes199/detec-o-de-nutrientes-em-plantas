@@ -81,9 +81,9 @@ if uploaded_file is not None:
                         confidences = boxes.conf
                         xyxy = boxes.xyxy
 
-                        st.write("Classes detectadas:", classes.cpu().numpy())
-                        st.write("Pontuações de confiança:", confidences.cpu().numpy())
-                        st.write("Coordenadas das caixas delimitadoras:", xyxy.cpu().numpy())
+                        #st.write("Classes detectadas:", classes.cpu().numpy())
+                        #st.write("Pontuações de confiança:", confidences.cpu().numpy())
+                        #st.write("Coordenadas das caixas delimitadoras:", xyxy.cpu().numpy())
 
                         # Exibe a imagem com as caixas delimitadoras
                         annotated_image = results[0].plot()
